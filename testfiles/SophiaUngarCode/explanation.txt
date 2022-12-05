@@ -1,0 +1,2 @@
+example1 and example 2 were written by me for the same language simultaneously in the same language
+example 3 different project, same language, slightly different time

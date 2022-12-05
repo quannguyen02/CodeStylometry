@@ -1,0 +1,28 @@
+# steganography.py
+# This program edits an image (fruit.bmp) to uncover 
+# hidden information.
+#
+# Partner allowed (and encouraged).
+#
+# Name(s): Jenny Rowlett, Ian Watson
+# Date: 11/17/20
+
+import picture2
+
+# main
+def main():
+  pic = picture2.Picture('fruit.bmp') #reads in the file
+
+  w = pic.getWidth()
+  h = pic.getHeight()
+ 
+ # goes through the picture and changes the r value each time
+  for y in range(0, h):
+    for x in range(0, w):
+      r = pic.getPixelRed(x, y) #gets the red pixel
+      r = r % 4 #modifies red pixels
+      pic.setPixelColor(x, y, r*64, 0, 0) #sets the pixel color
+  pic.display() #displays picture
+  input('')
+
+main()
