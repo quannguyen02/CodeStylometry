@@ -21,6 +21,3 @@ functions.cs finds and compares the function names.
 comments.cs analyzes the location and contents of comments.
 
 testfiles has files to test this code on.
-
-We have adhered to the Honor Code in this assignment.
-Miriam, Jenny, Sophia, Quan
